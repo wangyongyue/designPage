@@ -14,8 +14,6 @@ class Page:Vue,V_ViewControllerProtocol{
     var arrayContent = [VueData]()
     
     
-    
-    
     func v_viewController() -> UIViewController{
         let vc = TableViewController()
         vc.m = self
@@ -40,7 +38,7 @@ class Page:Vue,V_ViewControllerProtocol{
     private func dealNav(){
         
         let m = NavTitleCellModel()
-        m.name = "page"
+        m.name = "VSK"
         self.arrayNav.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return self.arrayNav

@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import VueSwift
 
 typealias codeBlock = (String) -> ()
 class CodeViewController: UIViewController,AVCaptureMetadataOutputObjectsDelegate {
@@ -23,6 +24,21 @@ class CodeViewController: UIViewController,AVCaptureMetadataOutputObjectsDelegat
         super.viewDidLoad()
 
         self.fromCamera()
+        
+        let button = UIButton()
+        button.setImage(UIImage.init(named: "back_w"), for: .normal)
+        self.view.addSubview(button)
+        button.snp.makeConstraints { (make) in
+            
+            make.top.equalTo(20)
+            make.left.equalTo(12)
+            
+        }
+        button.v_click {
+            
+            self.session.stopRunning()
+            self.navigationController?.popViewController(animated: true)
+        }
 
     }
     func backCodeBlock(_ b:@escaping codeBlock){
@@ -107,21 +123,29 @@ class CodeViewController: UIViewController,AVCaptureMetadataOutputObjectsDelegat
         }
         self.session.stopRunning()
         //输出结果
-        let alertController = UIAlertController(title: "二维码",
-                                                message: stringValue,preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "确定", style: .default, handler: {
-            action in
-            //继续扫描
-//            self.session.startRunning()
-            
-            if let value = stringValue{
-                self.block?(value)
-            }
-            self.navigationController?.popViewController(animated: false)
-            
-        })
-        alertController.addAction(okAction)
-        self.present(alertController, animated: true, completion: nil)
+        if let value = stringValue{
+                       
+            self.block?(value)
+                   
+        }
+        self.navigationController?.popViewController(animated: false)
+        
+        
+//        let alertController = UIAlertController(title: "二维码",
+//                                                message: stringValue,preferredStyle: .alert)
+//        let okAction = UIAlertAction(title: "确定", style: .default, handler: {
+//            action in
+//            //继续扫描
+////            self.session.startRunning()
+//
+//            if let value = stringValue{
+//                self.block?(value)
+//            }
+//            self.navigationController?.popViewController(animated: false)
+//
+//        })
+//        alertController.addAction(okAction)
+//        self.present(alertController, animated: true, completion: nil)
 
     }
 

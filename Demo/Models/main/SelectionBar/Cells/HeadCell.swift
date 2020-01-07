@@ -72,8 +72,8 @@ class HeadCell: UITableViewCell {
         if aModel is HeadCellModel{
             let m = aModel as! HeadCellModel
            
-            headerLabel.text = "欢迎使用快速原型设计"
-            subLabel.text = "谢谢您使用快速原型设计！请点击 + 开始使用"
+            headerLabel.text = "欢迎使用VSK"
+            subLabel.text = "请先到VSK官网(wwww.wangyongyue.com)完成单页设计，然后点击右上角扫描，查看设计效果"
 
         }
     }

@@ -20,8 +20,7 @@ class NavTitleCell: UITableViewCell {
     let rightButton:UIButton = {
         let a = UIButton()
         a.backgroundColor = UIColor.clear
-        a.setTitleColor(UIColor.black, for: .normal)
-        a.setTitle("扫描", for: .normal)
+        a.setImage(UIImage.init(named: "sao"), for: .normal)
         return a
     }()
     

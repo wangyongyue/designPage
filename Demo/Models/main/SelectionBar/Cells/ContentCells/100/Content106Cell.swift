@@ -33,7 +33,7 @@ class Content106Cell: UITableViewCell {
         let a = UIImageView()
         a.layer.cornerRadius = 6
         a.layer.masksToBounds = true
-        a.image = UIImage.init(named: Image.fillImage("feng_10"))
+        a.image = UIImage.init(named: Image.fillImage("che1"))
 
         a.contentMode = .scaleAspectFill
 
@@ -44,7 +44,7 @@ class Content106Cell: UITableViewCell {
         let a = UIImageView()
         a.layer.cornerRadius = 6
         a.layer.masksToBounds = true
-        a.image = UIImage.init(named: Image.fillImage("feng_11"))
+        a.image = UIImage.init(named: Image.fillImage("che4"))
 
         a.contentMode = .scaleAspectFill
 
@@ -55,7 +55,7 @@ class Content106Cell: UITableViewCell {
         let a = UIImageView()
         a.layer.cornerRadius = 6
         a.layer.masksToBounds = true
-        a.image = UIImage.init(named: Image.fillImage("feng_12"))
+        a.image = UIImage.init(named: Image.fillImage("che6"))
 
         a.contentMode = .scaleAspectFill
 

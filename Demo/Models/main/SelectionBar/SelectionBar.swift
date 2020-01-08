@@ -56,12 +56,7 @@ class SelectionBar:Vue{
         array.append(Content103())
 
         
-        
-        array.append(MineCellModel())
-        array.append(MineTabCellModel())
-        array.append(MineSetupCellModel())
-
-     
+       
 
        self.v_array(vId: ARRAYID) { () -> Array<VueData>? in
            return array

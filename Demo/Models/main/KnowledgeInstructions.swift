@@ -15,29 +15,7 @@ class KnowledgeInstructions: Configuration {
     override init() {
         super.init()
         
-        Vue.register(aClass: KnowledgeAttentionCellModel.classForCoder(), toClass: KnowledgeAttentionCell.classForCoder())
-        Vue.register(aClass: KnowledgeRecomCellModel.classForCoder(), toClass: KnowledgeRecomCell.classForCoder())
-        Vue.register(aClass: KnowledgeHotCellModel.classForCoder(), toClass: KnowledgeHotCell.classForCoder())
-        Vue.register(aClass: KnowledgeMembersCellModel.classForCoder(), toClass: KnowledgeMembersCell.classForCoder())
-        Vue.register(aClass: KnowledgeMessageCellModel.classForCoder(), toClass: KnowledgeMessageCell.classForCoder())
-        Vue.register(aClass: KnowledgeProblemCellModel.classForCoder(), toClass: KnowledgeProblemCell.classForCoder())
-
         
-        Vue.register(aClass: KnowledgeHomeNavCellModel.classForCoder(), toClass: KnowledgeHomeNavCell.classForCoder())
-        Vue.register(aClass: KnowledgeMembersNavCellModel.classForCoder(), toClass: KnowledgeMembersNavCell.classForCoder())
-        Vue.register(aClass: KnowledgeMessageNavCellModel.classForCoder(), toClass: KnowledgeMessageNavCell.classForCoder())
-        Vue.register(aClass: KnowledgeMineNavCellModel.classForCoder(), toClass: KnowledgeMineNavCell.classForCoder())
-        Vue.register(aClass: KnowledgeProblemNavCellModel.classForCoder(), toClass: KnowledgeProblemNavCell.classForCoder())
-
-        
-        Vue.register(aClass: KnowledgeM1CellModel.classForCoder(), toClass: KnowledgeM1Cell.classForCoder())
-        Vue.register(aClass: KnowledgeM2CellModel.classForCoder(), toClass: KnowledgeM2Cell.classForCoder())
-        Vue.register(aClass: KnowledgeM3CellModel.classForCoder(), toClass: KnowledgeM3Cell.classForCoder())
-        Vue.register(aClass: KnowledgeM3CrossCellModel.classForCoder(), toClass: KnowledgeM3CrossCell.classForCoder())
-
-        Vue.register(aClass: KnowledgeMineCellModel.classForCoder(), toClass: KnowledgeMineCell.classForCoder())
-        Vue.register(aClass: KnowledgeMineCrossCellModel.classForCoder(), toClass: KnowledgeMineCrossCell.classForCoder())
-
         
         Vue.register(aClass: AddCellModel.classForCoder(), toClass: AddCell.classForCoder())
         Vue.register(aClass: NavMainCellModel.classForCoder(), toClass: NavMainCell.classForCoder())
@@ -76,11 +54,7 @@ class KnowledgeInstructions: Configuration {
         Vue.register(aClass: BannerSubCellModel.classForCoder(), toClass: BannerSubCell.classForCoder())
 
                
-        Vue.register(aClass: MineCellModel.classForCoder(), toClass: MineCell.classForCoder())
-        Vue.register(aClass: MineTabCellModel.classForCoder(), toClass: MineTabCell.classForCoder())
-        Vue.register(aClass: MineTabSubCellModel.classForCoder(), toClass: MineTabSubCell.classForCoder())
-        Vue.register(aClass: MineSetupCellModel.classForCoder(), toClass: MineSetupCell.classForCoder())
-        
+       
         Vue.register(aClass: TitleCellModel.classForCoder(), toClass: TitleCell.classForCoder())
         
         
